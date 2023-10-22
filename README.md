@@ -1,4 +1,13 @@
-# React + Vite
+# NamKart Shopping Website
+
+A Shoping website built using React JS, Bootstrap an fakestoreapi.
+
+## Features
+* Search Product
+* Product Listing
+* Responsive design
+
+## React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 

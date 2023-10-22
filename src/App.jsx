@@ -1,5 +1,5 @@
 import "./App.css";
-import Home from "./Pages/Home";
+import Home from "./pages/Home";
 import "bootstrap/dist/css/bootstrap.min.css";
 import LoginPage from "./Pages/Login";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -16,12 +16,15 @@ import CartPage from "./pages/CartPage";
 import ProductList from "./pages/ProductList";
 import { CategoryProvider } from "./contexts/CategoryContext";
 import ErrorPage from "./pages/404";
+import { ProductSearchProvider } from "./contexts/ProductSearchContext";
+import SearchProducts from "./components/SearchProducts";
 function App() {
   return (
     <>
       <BrowserRouter>
         <ProductProvider>
           <CartProvider>
+            <ProductSearchProvider>
             <CategoryProvider>
           <NavigationBar />
             <Routes>
@@ -31,9 +34,11 @@ function App() {
               <Route path="/single/:id" element={<SingleProduct />} />
               <Route path="/cart" element={<CartPage/>} />
               <Route path="/product" element={<ProductList/>} />
+              <Route path="/search" element={<SearchProducts/>}/>
               <Route path="*" element={<ErrorPage/>}/>
             </Routes>
             </CategoryProvider>
+            </ProductSearchProvider>
           </CartProvider>
         </ProductProvider>
         <Footer />

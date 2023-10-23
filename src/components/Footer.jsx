@@ -1,7 +1,7 @@
 // import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col } from "react-bootstrap";
 // import './Footer.css'; // Import your CSS file
-import { Facebook, Twitter, Instagram } from 'react-bootstrap-icons';
+import { Facebook, Twitter, Instagram } from "react-bootstrap-icons";
 
 const Footer = () => {
   return (
@@ -10,14 +10,25 @@ const Footer = () => {
         <Row>
           <Col md={3} sm={6} xs={12} className="footer-section">
             <h4>About Us</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac leo sed nisl cursus scelerisque.</p>
+            <p>
+              Welcome to NamKart, your one-stop shop for all your shopping
+              needs. We are dedicated to providing the best shopping experience
+              with a wide range of high-quality products and exceptional
+              customer service.
+            </p>
           </Col>
           <Col md={3} sm={6} xs={12} className="footer-section">
             <h4>Quick Links</h4>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Products</a></li>
-              <li><a href="#">About Us</a></li>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Products</a>
+              </li>
+              <li>
+                <a href="#">About Us</a>
+              </li>
               {/* Add more links as needed */}
             </ul>
           </Col>
@@ -29,13 +40,19 @@ const Footer = () => {
           <Col md={3} sm={6} xs={12} className="footer-section">
             <h4>Follow Us</h4>
             <div className="social-icons">
-              <a href="#"><Facebook /></a>
-              <a href="#"><Twitter /></a>
-              <a href="#"><Instagram /></a>
+              <a href="#">
+                <Facebook />
+              </a>
+              <a href="#">
+                <Twitter />
+              </a>
+              <a href="#">
+                <Instagram />
+              </a>
             </div>
           </Col>
         </Row>
-        <p className='text-center'> &copy;2023 Copyright Ecommerce</p>
+        <p className="text-center"> &copy;2023 Copyright Ecommerce</p>
       </Container>
     </footer>
   );

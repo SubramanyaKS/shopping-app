@@ -18,6 +18,7 @@ import { CategoryProvider } from "./contexts/CategoryContext";
 import ErrorPage from "./pages/404";
 import { ProductSearchProvider } from "./contexts/ProductSearchContext";
 import SearchProducts from "./components/SearchProducts";
+import About from "./pages/About";
 function App() {
   return (
     <>
@@ -35,6 +36,7 @@ function App() {
               <Route path="/cart" element={<CartPage/>} />
               <Route path="/product" element={<ProductList/>} />
               <Route path="/search" element={<SearchProducts/>}/>
+              <Route path="/about" element={<About/>}/>
               <Route path="*" element={<ErrorPage/>}/>
             </Routes>
             </CategoryProvider>

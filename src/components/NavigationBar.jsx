@@ -3,7 +3,7 @@ import SearchBar from './SearchBar';
 import {Link} from "react-router-dom";
 import CartIcon from './CartIcon';
 import { useCart } from '../contexts/CartContext';
-import { HouseFill,Bag,Person } from 'react-bootstrap-icons';
+import { HouseFill,Bag,Person,Book } from 'react-bootstrap-icons';
 
 const NavigationBar = () => {
    const {cartState} = useCart();
@@ -25,7 +25,7 @@ const NavigationBar = () => {
 
         }}
       >
-        Ecommerce
+        NamKart
       </Navbar.Brand>
         <SearchBar />
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -36,6 +36,9 @@ const NavigationBar = () => {
           </Link>
           <Link className="navlink" to="/product">
            <Bag/> Products
+          </Link>
+          <Link className="navlink" to="/about">
+          <Book/> About
           </Link>
           <Link className="navlink" to="/login">
           <Person/> Login

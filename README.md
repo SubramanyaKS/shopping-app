@@ -32,7 +32,7 @@ NamKart is live and ready for you to explore! Visit [NamKart E-Commerce](https:/
 
 2. Navigate to the project directory:
     ```bash
-    cd NamKart
+    cd shopping-app
     ```
 3. Install dependencies:
     ```bash
@@ -44,8 +44,12 @@ NamKart is live and ready for you to explore! Visit [NamKart E-Commerce](https:/
     ```
 5. Open your browser and visit `http://localhost:5173` to explore NamKart locally.
 
+## Contributing:
+
+We welcome contributions! If you'd like to contribute to NamKart, please follow our [Contribution Guidelines](https://github.com/SubramanyaKS/shopping-app/blob/main/CONTRIBUTING.md).
+
 ## Feedback:
 
-We value your feedback. If you have any suggestions, issues, or feature requests, please open an issue.
+We value your feedback. If you have any suggestions, issues, or feature requests, please open an [issue](https://github.com/SubramanyaKS/shopping-app/issues).
 
 Happy Shopping with NamKart!

@@ -12,7 +12,7 @@ const TopRated = () => {
 
   return (
     <div>
-        <h3 className="text-decoration-underline text-center">Top Rated Products</h3>
+        <h3 className="text-decoration-none text-center">Top Rated Products</h3>
         <div className="product-list mt-3">
         {featuredProducts.map((product) => (
           <ProductCard key={product.id} product={product} />

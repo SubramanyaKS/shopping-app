@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import { DashLg, PlusLg } from 'react-bootstrap-icons';
 import { useCart } from '../contexts/CartContext';
 
 const QuantityButton =({productid,quantity}) =>{
@@ -21,9 +22,9 @@ const QuantityButton =({productid,quantity}) =>{
 
   return (
     <div>
-      <button className="quantity-button" onClick={()=>decreaseQuantity()}> - </button>
+      <button className="quantity-button" onClick={()=>decreaseQuantity()}> <DashLg/> </button>
       <span>{quantity}</span>
-      <button className="quantity-button" onClick={()=>increaseQuantity()}>+</button>
+      <button className="quantity-button" onClick={()=>increaseQuantity()}><PlusLg/></button>
     </div>
   );
 }

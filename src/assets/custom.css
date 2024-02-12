@@ -1,0 +1,22 @@
+.text-pinkpurple{
+    color:var(--pinkpurple) !important;
+  }
+  .text-bluepurple{
+    color:var(--bluepurple) !important;
+  }
+  .text-yellow{
+    color:var(--yellow) !important;
+  }
+  .text-gold{
+    color:var(--gold) !important;
+  }
+  .text-magenta{
+    color:var(--magenta) !important;
+  }
+  .text-violet{
+    color:var(--voilet) !important;
+  }
+  .text-cursive{
+    font-family: 'Kalam', cursive;
+  }
+  

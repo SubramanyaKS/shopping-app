@@ -7,7 +7,7 @@ const CartIcon = ({ itemCount }) => {
   return (
     <div className="cart-icon">
       <CartFill className='mt-2'/>
-      <Badge pill variant="danger" className="cart-badge">
+      <Badge pill bg=""   className="cart-badge">
         {itemCount}
       </Badge>
     </div>

@@ -10,9 +10,9 @@ const NoCart = () => {
           height: '100px',
           margin:'1%',
         }}/>
-        <h5>There is no items in your cart.</h5>
+        <h4 className='text-violet text-cursive'>There is no items in your cart.</h4>
         <h6>Please add the products which you like.</h6>
-        <button className="p-2 m-2 bg-primary text-light border-0 rounded-pill " onClick={()=>navigate('/product')}>Add the Product</button>
+        <button className="p-2 m-2 buttond text-light border-0 rounded-pill " onClick={()=>navigate('/product')}>Add the Product</button>
     </div>
   )
 }

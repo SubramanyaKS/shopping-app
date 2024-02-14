@@ -10,20 +10,23 @@ const NavigationBar = () => {
     // const cartCount=5;
   return (
     <Navbar
-    className="shadow-lg p-3"
-    style={{ color: "blue" }}
+    className="shadow-lg p-3 text-bluepurple"
+    
     collapseOnSelect
     expand="lg"
     bg="white"
+    sticky="top"
     variant="light"
   >
     <Container>
       <Navbar.Brand
-        style={{
-          fontFamily: "Comic Sans MS, Comic Sans, cursive",
-          color: "#00f",
+        // style={{
+        //   fontFamily: "Comic Sans MS, Comic Sans, cursive",
+        //   color: "#00f",
 
-        }}
+        // }}
+        className='text-cursive text-bluepurple text-bold'
+
       >
         NamKart
       </Navbar.Brand>

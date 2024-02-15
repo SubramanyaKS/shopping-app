@@ -19,7 +19,7 @@ const Categories = () => {
       
   return (
     <div className="container">
-        <h3 className="text-center text-decoration-none">Categories</h3>
+        <h3 className="text-center text-bluepurple">Categories</h3>
     <div className="row">
       {categories.map((category, index) => (
         <div className="col-md-4" key={index}>

@@ -10,7 +10,7 @@ const Main = () => {
         <Container>
           <Row>
             <Col>
-            <h1 className="fs-1 text-primary text-justify p-3">{mainpagedata.heading}</h1>
+            <h1 className="fs-1 text-bluepurple text-cursive text-justify p-3">{mainpagedata.heading}</h1>
             <h6 className="lh-lg p-3 text-justify">{mainpagedata.details}</h6>
             <button onClick={()=>navigate("/product")} className="product-btn">Shop Now <ChevronRight /></button>
             </Col>

@@ -34,7 +34,7 @@ const CartPage = () => {
 //   console.log(cartState);
   return (
     <div className="cart">
-      <h4 className="text-center p-2">My Cart</h4>
+      <h4 className="text-center p-2 text-cursive">My Cart</h4>
       <div>
         <table className="cart-table">
           <tbody>
@@ -61,11 +61,13 @@ const CartPage = () => {
           </tbody>
         </table>
       </div>
-      <div className="card w-25 total border border-primary m-2">
-        <h4>Order Summary</h4>
-        <h6>Items: {cartItems.length}</h6>
-        <h6>Total Cost :${totalAmount}</h6>
-        <button onClick={()=>buyProduct()} className="btn btn-primary">Place Order</button>
+      <div style={{display:"flex",alignItems:"center",justifyContent:"center"}} className="pb-4 pt-2">
+      <div className="card w-25 total shadow-lg m-2">
+        <h4 className="text-cursive text-bluepurple">Order Summary</h4>
+        <h6>Items: <span className="text-violet">{cartItems.length}</span></h6>
+        <h6>Total Cost :<span className="text-magenta">${totalAmount}</span></h6>
+        <button onClick={()=>buyProduct()} className="buttond">Place Order</button>
+      </div>
       </div>
     </div>
   );

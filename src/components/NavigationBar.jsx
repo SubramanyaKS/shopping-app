@@ -20,15 +20,10 @@ const NavigationBar = () => {
   >
     <Container>
       <Navbar.Brand
-        // style={{
-        //   fontFamily: "Comic Sans MS, Comic Sans, cursive",
-        //   color: "#00f",
-
-        // }}
-        className='text-cursive text-bluepurple text-bold'
+        className='text-rocksalt text-bluepurple text-bold'
 
       >
-        NamKart
+        Namm<span className='text-pinkpurple'>Kart</span>
       </Navbar.Brand>
         <SearchBar />
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />

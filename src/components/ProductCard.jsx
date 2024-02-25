@@ -19,7 +19,7 @@ const ProductCard = ({ product }) => {
   return (
     <div className="product-card">
       <img className='product-image' src={product.image} height={100} width={100} alt={product.title} />
-      <h3>{product.title}</h3>
+      <h3 className='text-cursive'>{product.title}</h3>
       <h4 className='text-success'>${product.price}</h4>
       <StarRating rating={product.rating.rate} numReview={product.rating.count}/>  
       <button className='rounded m-1 gradient-button' onClick={()=>navigate(`/single/${product.id}`)}><Eye/> View Details</button>

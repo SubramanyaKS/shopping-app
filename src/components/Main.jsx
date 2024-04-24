@@ -11,8 +11,8 @@ const Main = () => {
           <Row>
             <Col>
             <h1 className="fs-1 text-bluepurple text-cursive text-justify p-3">{mainpagedata.heading}</h1>
-            <h6 className="lh-lg p-3 text-justify">{mainpagedata.details}</h6>
-            <button onClick={()=>navigate("/product")} className="product-btn">Shop Now <ChevronRight /></button>
+            <h6 className="lh-lg p-3 text-justify details">{mainpagedata.details}</h6>
+            <button onClick={()=>navigate("/product")} className="product-btn p-3 w-25">Shop Now <ChevronRight /></button>
             </Col>
             <Col>
               <Image src ={img} alt="model" style={{ maxWidth: '100%', height: 'auto' }}/>

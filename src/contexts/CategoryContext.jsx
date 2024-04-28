@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 // CategoryContext.js
+import axios from 'axios';
 import { createContext, useState, useEffect } from 'react';
 
 const CategoryContext = createContext();
@@ -9,14 +10,18 @@ const CategoryProvider = ({ children }) => {
 
   useEffect(() => {
     // Fetch the category data from the API here
-    fetch('https://fakestoreapi.com/products/categories')
-      .then((response) => response.json())
-      .then((data) => setCategories(data))
-      .catch((error) => console.error('Error fetching categories: ', error));
+    axios
+        .get('https://fakestoreapi.com/products/categories')
+        .then((response) => {
+          setCategories(response.data);
+        })
+        .catch((error) => {
+          console.error('Error fetching data:', error.message);
+        });
   }, []);
 
   return (
-    <CategoryContext.Provider value={categories}>
+    <CategoryContext.Provider value={{categories}}>
       {children}
     </CategoryContext.Provider>
   );

@@ -2,22 +2,31 @@ import { useCart } from "../contexts/CartContext";
 import QuantityButton from "../components/QuantityButton";
 import RemoveButton from "../components/RemoveButton";
 import { showCustomToast } from "../utils/toast";
-import 'react-toastify/dist/ReactToastify.css';
 import NoCart from "../components/NoCart";
+import AddressForm from "../components/AddressForm";
+import { useState } from "react";
 
 
 const CartPage = () => {
   const { cartState, cartDispatch } = useCart();
+  const [next,setNext] = useState(false)
   // Now you can access cartItems from cartState
   const { cartItems } = cartState;
+
+
 
   if(cartItems.length<=0){
     return <NoCart/>
   }
   
+
   const totalAmount = cartItems.reduce((total, item) => {
     return total + item.price * item.quantity;
   }, 0);
+
+  const nextStatus = ()=>{
+    setNext(!next);
+  }
 
   const buyProduct =()=>{
     if(cartItems.length>0){
@@ -29,7 +38,10 @@ const CartPage = () => {
   
   const handleClick = (product) =>{
     showCustomToast(`${product.title} is removed cart`,'failed-toast');
+   setTimeout(() => {
     cartDispatch({ type: "REMOVE_FROM_CART", payload: product.id });
+   }, 3000);
+    
   }
 //   console.log(cartState);
   return (
@@ -61,14 +73,15 @@ const CartPage = () => {
           </tbody>
         </table>
       </div>
-      <div style={{display:"flex",alignItems:"center",justifyContent:"center"}} className="pb-4 pt-2">
+     {!next? <div style={{display:"flex",alignItems:"center",justifyContent:"center"}} className="pb-4 pt-2">
       <div className="card w-25 total shadow-lg m-2">
         <h4 className="text-cursive text-bluepurple">Order Summary</h4>
         <h6>Items: <span className="text-violet">{cartItems.length}</span></h6>
         <h6>Total Cost :<span className="text-magenta">${totalAmount}</span></h6>
-        <button onClick={()=>buyProduct()} className="buttond">Place Order</button>
+        <button onClick={nextStatus} className="buttond">Proceed</button>
       </div>
       </div>
+     :<AddressForm OnClick={buyProduct}/>}
     </div>
   );
 };

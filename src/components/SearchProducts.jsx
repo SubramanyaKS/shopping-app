@@ -1,6 +1,7 @@
 // import React from 'react'
 import { useProductSearch } from '../contexts/ProductSearchContext'
 import ProductCard from './ProductCard';
+// import { useNavigate} from "react-router-dom";
 
 const SearchProducts = () => {
   const {searchState} = useProductSearch();

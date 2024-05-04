@@ -8,7 +8,7 @@ import NavigationBar from "./components/NavigationBar";
 import { ToastContainer } from 'react-toastify';
 import SignUp from "./Pages/SignUp";
 import Footer from "./components/Footer";
-import SingleProduct from "./Pages/SingleProduct";
+import SingleProduct from "./pages/SingleProduct";
 // import { CartContext, CartProvider } from "./context/CartContext";
 import { ProductProvider } from "./contexts/ProductContext";
 import { CartProvider } from "./contexts/CartContext";
@@ -19,6 +19,8 @@ import ErrorPage from "./pages/404";
 import { ProductSearchProvider } from "./contexts/ProductSearchContext";
 import SearchProducts from "./components/SearchProducts";
 import About from "./pages/About";
+import './assets/custom.css';
+import 'react-toastify/dist/ReactToastify.css';
 function App() {
   return (
     <>

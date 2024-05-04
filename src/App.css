@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&family=Sofia&display=swap');
 .login-container {
     /* display: flex; */
     min-height: 100vh;
@@ -36,6 +39,11 @@
     border-radius: '0' !important;
   }
 
+  .details{
+    font-family: "Inter", sans-serif !important;
+    font-weight: 400 !important;
+  }
+
   /* text box */
   .text-box {
     display: flex;
@@ -58,7 +66,7 @@
     display: inline-block;
     padding: 10px 20px;
     border: none;
-    background-color: #007bff;
+    background: linear-gradient(90deg,var(--bluepurple),var(--pinkpurple)); 
     color: #fff;
     border-radius: 20px;
     cursor: pointer;
@@ -67,7 +75,7 @@
   }
   
   .curved-button:hover {
-    background-color: #0056b3;
+    background: linear-gradient(90deg,var(--pinkpurple),var(--bluepurple));
   }
   
   
@@ -113,7 +121,7 @@
 
 /* Footer */
 .footer {
-  background-color: #5a6ff6;
+  background-color: var(--magenta);
   padding: 30px 0;
 }
 
@@ -229,7 +237,7 @@
 }
 .category-button > button:hover{
   
-  background-color: #000;
+  background-color: var(--bluepurple);
   color:#fff;
 }
 .category-button >  button:focus{
@@ -241,14 +249,17 @@
   top: -14px;
   right: -7px;
   font-size: 0.5rem;
+  background-color: var(--magenta) !important;
+  color: #ffffff;
 }
 .nav-link{
   justify-content: space-between !important;
   font-weight: bold !important;
+  color:var(--magenta) !important;
 }
 
 .nav-link:hover{
-  background-color: #0056b3;
+  background-color: var(--magenta);
   color:white !important;
 }
 
@@ -286,7 +297,10 @@
 }
 
 .cart-header{
-  background-color: #0056b3;
+  /* background-color: #0056b3; */
+  border:2px solid var(--magenta);
+  border-style: dotted;
+  color:var(--bluepurple);
   
 }
 
@@ -321,9 +335,10 @@
   padding: 5px;
   font-size: large;
   font-weight: bold;
+  color:var(--magenta);
 }
 .navlink:hover{
-  background-color: #4968ad;
+  background-color: var(--magenta);
   color:#fff;
 }
 th,td{
@@ -369,11 +384,11 @@ th,td{
 }
 
 .gradient-button {
-  color: blue;
-  background: linear-gradient(to right, blue 50%, #fff 50%);
+  color: var(--pinkpurple);
+  background: linear-gradient(to right, var(--pinkpurple) 50%, #fff 50%);
   background-size: 200% 100%;
   background-position: right bottom;
-  border: 1px solid blue;
+  border: 1px solid var(--pinkpurple);
   padding: 10px 10px;
   cursor: pointer;
   transition: background-position 0.3s;
@@ -383,15 +398,27 @@ th,td{
   color:#fff;
 }
 .product-btn{
-  background: linear-gradient(to right, #fff 50%, blue 50%);
+  background: linear-gradient(to right, #fff 50%, var(--bluepurple) 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   border: none;
+  border-radius: 26px;
   padding: 10px 10px;
   cursor: pointer;
   transition: background-position 0.3s;
   color: white;
   
+}
+.buttond{
+  margin: 0 5px;
+  border-radius: 45px !important;
+  background:linear-gradient(var(--bluepurple),var(--pinkpurple)) !important;
+  color: #fff !important;
+  border: none !important;
+  
+}
+.buttond:hover{
+  background:linear-gradient(var(--pinkpurple),var(--bluepurple)) !important;
 }
 .not-found{
   padding:7%;
@@ -401,6 +428,13 @@ th,td{
 }
 .product-btn:hover{
   background-position: left bottom;
-  color:blue;
-  border: 1px solid blue;
+  color:var(--bluepurple);
+  border: 1px solid var(--bluepurple);
+}
+
+.error-code{
+  font-size: 72px;
+  color: var(--bluepurple);
+  text-shadow: var(--pinkpurple)  3px 5px;
+  font-family:Verdana,'Segoe UI', Tahoma, sans-serif;
 }

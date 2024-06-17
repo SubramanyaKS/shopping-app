@@ -1,0 +1,13 @@
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2%;
+    justify-content: space-between; /* Spread the cards evenly in the row */
+  }
+  
+  /* Add media query to adjust card layout on smaller screens */
+  @media (max-width: 768px) {
+    .product-list {
+      justify-content: center; /* Center cards on smaller screens */
+    }
+  }
